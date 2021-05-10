@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <title>EV Compare</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><a href="#home">EV Compare</a></div>
+        <ul>
+            <li><a>News</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Cars</a></li>
+            <li><a>About</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="cta-container">
+            <h1 class="cta-heading">Find the vehicle that suits your lifestyle</h1>
+            <a class="cta-link" href="#compare">Compare Now!</a>
+        </div>
+        <img id="slider" />
+    </section>
+    <section id="compare">
+        <h2>Choose Your Options</h2>
+        <p class="subheading">Choose the two vehicles you would like to compare</p>
+        <div id="compare-tables">
+            <div class="column">
+                <select id="cars-1" onchange="renderFirstOption()">
+                    <option disabled selected>Pick first option</option>
+                    <option value="Tesla Model 3">Tesla Model 3</option>
+                    <option value="Tesla Model S">Tesla Model S</option>
+                    <option value="Tesla Model Y">Tesla Model Y</option>
+                    <option value="Tesla Model X">Tesla Model X</option>
+                    <option value="Lucid Air Dream Edition">Lucid Air Dream Edition</option>
+                    <option value="Polestar 2">Polestar 2</option>
+                </select>
+                <div class="carData">
+                    <p id="carName"></p>
+                    <p id="price"></p>
+                    <p id="range"></p>
+                    <p id="accel"></p>
+                    <p id="topSpeed"></p>
+                    <p id="seating"></p>
+                </div>
+            </div>
+            <div class="column">
+                <select id="cars-2" onchange="renderSecondOption()">
+                    <option disabled selected>Pick second option</option>
+                    <option value="Tesla Model 3">Tesla Model 3</option>
+                    <option value="Tesla Model S">Tesla Model S</option>
+                    <option value="Tesla Model Y">Tesla Model Y</option>
+                    <option value="Tesla Model X">Tesla Model X</option>
+                    <option value="Lucid Air Dream Edition">Lucid Air Dream Edition</option>
+                    <option value="Polestar 2">Polestar 2</option>
+                </select>
+                <div class="carData">
+                    <p id="carName-2"></p>
+                    <p id="price-2"></p>
+                    <p id="range-2"></p>
+                    <p id="accel-2"></p>
+                    <p id="topSpeed-2"></p>
+                    <p id="seating-2"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>
